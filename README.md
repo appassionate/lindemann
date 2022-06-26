@@ -20,6 +20,6 @@ lindemann = LindemannAna(u.atoms,# point out the  MDA Universe
                           )
 
 #parallel execute lindemann analysis
-parallel_exec(lindemann.run, )
+parallel_exec(lindemann.run, nproc=4) #nproc for core number using
 
 ```
